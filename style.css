@@ -1,0 +1,378 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px; /* Largura máxima do conteúdo */
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-color: #FDBF3C;
+  width: 100%; /* Garante que o fundo pegue toda a largura */;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav a {
+  color: #333333;
+  text-decoration: none;
+  padding: 24px;
+  font-weight: 500;
+}
+
+/* BANNER */
+.banner {
+  background-color: #0A5A83;
+  width: 100%;
+}
+
+.banner .container {
+  display: flex;
+  height: 500px;
+}
+
+/* ESTILOS ADICIONAIS PARA O BANNER */
+
+.banner-esquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px; /* Adiciona um respiro nas laterais */
+}
+
+.banner-titulo {
+  font-family: 'Poppins', sans-serif; /* Usando a fonte que você importou para títulos */
+  font-size: 52px; /* Tamanho grande para impactar */
+  font-weight: 700; /* Negrito */
+  color: #FFFFFF; /* Cor branca para contrastar com o fundo azul */
+  line-height: 1.2; /* Altura da linha para o texto não ficar colado */
+  margin-bottom: 30px; /* Espaço entre o título e o botão */
+}
+
+.banner-botao {
+  display: inline-block; /* Permite definir largura e altura, mas se ajusta ao conteúdo */
+  background-color: #FDBF3C; /* A mesma cor amarela do seu header, criando identidade visual! */
+  color: #0A5A83; /* Cor do texto, o azul escuro do fundo para contraste */
+  padding: 16px 32px; /* Espaçamento interno (vertical e horizontal) */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  font-weight: 600; /* Um pouco de negrito */
+  font-size: 18px;
+  max-width: 250px; /* Largura máxima para o botão não ficar gigante */
+  text-align: center;
+  
+  /* Efeito de transição suave */
+  transition: all 0.3s ease; 
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+.banner-botao:hover {
+  transform: translateY(-5px); /* Move o botão 5px para cima */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para dar profundidade */
+  filter: brightness(1.05); /* Deixa o botão um pouco mais brilhante */
+}
+
+.banner-esquerda {
+  flex: 1;
+  background-color: #0A5A83;
+}
+
+.banner-direita {
+  flex: 1;
+  background-color: #0A5A83;
+  position: relative;
+}
+
+.banner-direita img {
+  height: 600px;
+  bottom: -40px;
+  position: absolute;
+}
+
+.marcas .container{
+  text-align: center; 
+}
+
+.marcas .container h1{
+  color: #0A5A83;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.6rem;
+}
+
+.marcas .container img{
+    filter: grayscale(100%); /* Efeito opcional: deixar as logos em preto e branco */
+      transition: filter 0.3s;
+}
+
+.marcas .container img:hover{
+    filter: grayscale(0%); /* Remove o efeito ao passar o mouse */
+}
+
+/* ================================= 
+   SEÇÃO SOBRE
+==================================== */
+
+.sobre {
+  background-color: #F8F9FA; /* Uma cor de fundo suave, quase branca */
+  padding: 80px 0; /* 80px de espaço acima e abaixo, 0 nas laterais */
+  width: 100%; /* Garante que a cor de fundo preencha a tela */
+}
+
+.sobre-grid {
+  display: flex; /* A mágica para criar as colunas */
+  align-items: center; /* Alinha o texto e a imagem verticalmente no centro */
+  gap: 60px; /* Cria um espaço entre a coluna de texto e a de imagem */
+}
+
+.sobre-esquerda,
+.sobre-direita {
+  flex: 1; /* Faz com que cada coluna ocupe 50% do espaço disponível */
+}
+
+.sobre-esquerda h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #0A5A83; /* O azul escuro da sua paleta */
+  margin-bottom: 20px;
+}
+
+.sobre-esquerda p {
+  font-size: 16px;
+  line-height: 1.7; /* Aumenta o espaço entre as linhas para facilitar a leitura */
+  color: #555555; /* Um cinza escuro para o texto */
+}
+
+.sobre-direita img {
+  width: 100%; /* Faz a imagem ocupar todo o espaço da sua coluna */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 12px; /* Bordas arredondadas para um visual moderno */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* ================================= 
+   SEÇÃO ENDEREÇO
+==================================== */
+.endereco {
+  background-color: #FFFFFF; /* Fundo branco para uma seção limpa */
+  padding: 80px 0;
+}
+
+/* Um estilo genérico para títulos de seção que podemos reutilizar */
+.titulo-secao {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #0A5A83;
+  margin-bottom: 50px;
+}
+
+.endereco-grid {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.endereco-mapa,
+.endereco-info {
+  flex: 1; /* Cada coluna ocupa 50% do espaço */
+}
+
+.endereco-mapa iframe {
+  
+  width: 100%; /* Faz o mapa ocupar toda a largura da coluna */
+  height: 400px;
+  border-radius: 12px; /* Bordas arredondadas para um visual moderno */
+  border: 1px solid #ddd; /* Uma borda sutil */
+}
+
+/* Estilo para os novos ícones do Google na seção de endereço */
+.info-bloco .material-symbols-outlined {
+  font-size: 32px;          /* Controla o tamanho do ícone */
+  margin-right: 15px;       /* Cria um espaço à direita do ícone */
+  color: #0A5A83;            /* A cor principal da sua paleta. Mude se quiser! */
+  line-height: 1;           /* Garante alinhamento vertical */
+  align-self: flex-start;   /* Alinha o ícone com o topo do bloco de texto */
+}
+
+.info-bloco {
+  display: flex;
+  align-items: flex-start; /* Alinha o ícone com o topo do texto */
+  margin-bottom: 30px; /* Espaço entre os blocos de informação */
+}
+
+.info-bloco img {
+  width: 24px;
+  margin-right: 15px;
+  margin-top: 5px; /* Pequeno ajuste para alinhar melhor com o título */
+}
+
+.info-bloco h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 5px 0; /* Remove margem padrão e adiciona um pequeno espaço abaixo */
+}
+
+.info-bloco p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ================================= 
+   FOOTER (RODAPÉ)
+==================================== */
+
+.site-footer {
+  background-color: #0A5A83; /* O azul escuro da sua paleta */
+  color: #E0E0E0; /* Um cinza claro para o texto, bom contraste */
+  padding: 40px 0;
+  
+  /* As duas propriedades mais importantes para o efeito: */
+  position: relative; /* 1. Torna o footer um container para elementos posicionados */
+  overflow: hidden;   /* 2. Esconde tudo que "vazar" para fora do footer */
+}
+
+.footer-background-text {
+  position: absolute; /* Posiciona o texto em relação ao footer */
+  bottom: -80px;      /* Empurra o texto para baixo, fazendo-o "sair" da tela */
+  left: 10px;         /* Encosta no canto esquerdo */
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 200px;   /* Tamanho gigante! */
+  font-weight: 900;   /* Super negrito */
+  
+  /* Cor branca com baixíssima opacidade. Fica mais sutil que 'opacity' */
+  color: rgba(227, 18, 18, 0.05); 
+  
+  /* Impede que este texto decorativo seja selecionado ou clicado */
+  user-select: none;
+  pointer-events: none;
+}
+
+.footer-content {
+  position: relative; /* Garante que o conteúdo fique por cima do texto de fundo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite quebrar a linha em telas muito pequenas */
+  gap: 20px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* =================================
+   DESIGN RESPONSIVO (CELULARES)
+==================================== */
+
+/* Usamos 768px como um ponto de quebra comum para tablets e celulares */
+@media (max-width: 758px) {
+
+  /* 1. AJUSTES GERAIS */
+  .titulo-secao,
+  .marcas .container h1,
+  .sobre-esquerda h2 {
+    font-size: 30px; /* Diminui o tamanho dos títulos principais */
+  }
+
+  /* 2. HEADER E NAVEGAÇÃO */
+  .header .container {
+    flex-direction: column; /* Empilha o logo e o menu */
+    gap: 15px;
+    padding: 20px 15px; /* Diminui o espaçamento */
+  }
+
+  .nav nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os links do menu quebrem a linha */
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .nav a {
+    padding: 10px; /* Diminui o padding dos links */
+  }
+
+  /* 3. BANNER PRINCIPAL */
+  .banner .container {
+    flex-direction: column; /* Empilha o texto e a imagem */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .banner-esquerda {
+    text-align: center; /* Centraliza o texto do banner */
+    align-items: center; /* Centraliza o botão */
+  }
+
+  .banner-titulo {
+    font-size: 36px; /* Diminui o título principal */
+  }
+
+  .banner-direita {
+    display: none; /* Esconde a imagem do homem no celular para economizar espaço */
+  }
+
+  /* 4. MARCAS */
+  .marcas .container {
+    display: flex;
+    flex-wrap: wrap; /* Garante que os logos quebrem a linha */
+    justify-content: center;
+    gap: 25px;
+  }
+  .marcas img {
+    height: 75px; /* Controla a altura dos logos para ficarem uniformes */
+    filter: grayscale(0%); /* Remove o filtro cinza no mobile, é opcional */
+  }
+  
+  /* 5. SEÇÃO SOBRE (Você já tinha feito, mas organizamos aqui) */
+  .sobre-grid {
+    flex-direction: column; /* Empilha texto e imagem */
+    margin-left: 8px;
+    text-align: left; /* Mantém o texto alinhado à esquerda para leitura */
+  }
+
+  /* 6. SEÇÃO ENDEREÇO (Você já tinha feito, mas organizamos aqui) */
+  .endereco-grid {
+    flex-direction: column-reverse; /* Empilha info acima do mapa */
+    gap: 40px;
+  }
+
+  /* 7. FOOTER (RODAPÉ) */
+  .footer-content {
+    flex-direction: column; /* Empilha copyright e redes sociais */
+    gap: 20px;
+  }
+
+  .footer-background-text {
+    font-size: 100px; /* Diminui o texto decorativo */
+    bottom: -40px;    /* Ajusta a posição */
+  }
+  
+}
